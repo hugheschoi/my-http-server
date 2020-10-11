@@ -6,8 +6,9 @@
   <title>ejs</title>
 </head>
 <body>
+  <!-- 出路路径 尽量不要采用./ ../  绝对路径 /a/a.js -->
   <%dirs.forEach(item=>{%>
-    <li><a href="<%=item.href%>"><%=item%></a></li>
+    <li><a href="<%=item.href%>"><%=item.dir%></a></li>
   <%})%>
 </body>
 </html>
